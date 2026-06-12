@@ -1,0 +1,105 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CCTM banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e1512"/>
+      <stop offset="1" stop-color="#152019"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="320" rx="16" fill="url(#bg)"/>
+  <rect x="1.5" y="1.5" width="1197" height="317" rx="15" fill="none" stroke="#6ee7a8" stroke-opacity="0.22" stroke-width="3"/>
+
+  <!-- faint binary texture -->
+  <g font-family="Courier New, monospace" font-size="13" fill="#6ee7a8">
+    <text x="430" y="40"  opacity="0.08">1</text>
+    <text x="500" y="64"  opacity="0.06">0</text>
+    <text x="580" y="36"  opacity="0.08">1</text>
+    <text x="660" y="56"  opacity="0.06">0</text>
+    <text x="740" y="38"  opacity="0.07">1</text>
+    <text x="368" y="120" opacity="0.06">0</text>
+    <text x="404" y="196" opacity="0.07">1</text>
+    <text x="372" y="262" opacity="0.06">1</text>
+    <text x="800" y="120" opacity="0.06">0</text>
+    <text x="806" y="220" opacity="0.07">1</text>
+  </g>
+
+  <!-- wordmark -->
+  <text x="60" y="104" font-family="Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="64" font-weight="800" letter-spacing="2">
+    <tspan fill="#6ee7a8">CC</tspan><tspan fill="#eef5f0">TM</tspan>
+  </text>
+  <text x="63" y="136" font-family="Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="18" fill="#9fb8aa">Counterfactual Causal Tsetlin Machine</text>
+  <text x="63" y="172" font-family="Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="21" fill="#cfe3d6">Causality baked into the clauses,</text>
+  <text x="63" y="200" font-family="Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="21" fill="#cfe3d6">explanations you can re-verify.</text>
+
+  <!-- footer -->
+  <text x="60" y="295" font-family="Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="12.5" fill="#7d9486" letter-spacing="1">PURE NUMPY &#183; CPU ONLY &#183; PAPER INCLUDED</text>
+
+  <!-- ===== causal DAG with do() intervention ===== -->
+  <!-- edges -->
+  <g stroke="#9fb8aa" stroke-width="2.5" fill="none">
+    <line x1="622" y1="96" x2="558" y2="152"/>   <!-- Z -> X (to be cut) -->
+    <line x1="648" y1="96" x2="712" y2="152"/>   <!-- Z -> Y -->
+    <line x1="566" y1="172" x2="704" y2="172"/>  <!-- X -> Y -->
+  </g>
+  <path d="M 562 148 l 1 -10 l 7 7 Z" fill="#9fb8aa"/>
+  <path d="M 708 148 l -1 -10 l -7 7 Z" fill="#9fb8aa"/>
+  <path d="M 700 172 l -10 -5 v 10 Z" fill="#9fb8aa"/>
+
+  <!-- the do() cut on Z -> X -->
+  <g stroke="#f5b942" stroke-width="3" stroke-linecap="round">
+    <line x1="578" y1="120" x2="596" y2="132"/>
+    <line x1="586" y1="112" x2="604" y2="124"/>
+  </g>
+  <text x="548" y="116" text-anchor="end" font-family="Courier New, monospace"
+        font-size="15" font-weight="700" fill="#f5b942">do(X)</text>
+
+  <!-- nodes -->
+  <g>
+    <circle cx="635" cy="84" r="21" fill="#14241c" stroke="#6ee7a8" stroke-width="3"/>
+    <text x="635" y="90" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#6ee7a8">Z</text>
+    <circle cx="548" cy="172" r="21" fill="#14241c" stroke="#f5b942" stroke-width="3"/>
+    <text x="548" y="178" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#f5b942">X</text>
+    <circle cx="722" cy="172" r="21" fill="#14241c" stroke="#6ee7a8" stroke-width="3"/>
+    <text x="722" y="178" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#6ee7a8">Y</text>
+  </g>
+
+  <!-- factual / counterfactual pair -->
+  <g font-family="Courier New, monospace" font-size="15">
+    <text x="480" y="232" fill="#cfe3d6">x&#160; = 1 0 1 1 0</text>
+    <text x="624" y="232" fill="#e06c75">&#8594; denied</text>
+    <rect x="540" y="244" width="13" height="19" rx="3" fill="#f5b942" opacity="0.3"/>
+    <text x="480" y="259" fill="#cfe3d6">x&#8242; = 1 0 0 1 0</text>
+    <text x="624" y="259" fill="#6ee7a8">&#8594; approved</text>
+  </g>
+  <text x="480" y="285" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" fill="#7d9486" letter-spacing="1">MINIMAL FEASIBLE FLIP: ONE BIT</text>
+
+  <!-- ===== the SAT receipt ===== -->
+  <path d="M 845 56 Q 845 48 853 48 L 1127 48 Q 1135 48 1135 56 L 1135 252
+           l -14.5 12 l -14.5 -12 l -14.5 12 l -14.5 -12 l -14.5 12 l -14.5 -12 l -14.5 12 l -14.5 -12 l -14.5 12 l -14.5 -12 l -14.5 12 l -14.5 -12 l -14.5 12 l -14.5 -12 l -14.5 12 l -14.5 -12 l -14.5 12 l -14.5 -12 l -14.5 12 l -14.5 -12 Z"
+        fill="#f7f5ef"/>
+  <text x="990" y="74" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="13" font-weight="700" fill="#2a2e2c" letter-spacing="2">COUNTERFACTUAL RECEIPT</text>
+  <line x1="865" y1="84" x2="1115" y2="84" stroke="#2a2e2c" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <g font-family="Courier New, monospace" font-size="13.5" fill="#2a2e2c">
+    <text x="865" y="106">p cnf 14 5</text>
+    <text x="865" y="126">2 -9 14 0</text>
+    <text x="865" y="146">-4 11 0</text>
+    <text x="865" y="166">flip: x3 0 &#8594; 1</text>
+    <text x="865" y="186">cost: 1   feasible: yes</text>
+  </g>
+  <line x1="865" y1="200" x2="1115" y2="200" stroke="#2a2e2c" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="865" y="222" font-family="Courier New, monospace" font-size="13.5" fill="#2a2e2c">HMAC-SHA256 a91f&#8230;c04e</text>
+  <rect x="865" y="232" width="148" height="22" rx="11" fill="#1d7a46"/>
+  <text x="939" y="248" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="12.5" font-weight="700" fill="#eafff2">VERIFIED IN 0.1 MS</text>
+  <!-- stamp -->
+  <g transform="rotate(-12 1077 226)">
+    <circle cx="1077" cy="226" r="26" fill="none" stroke="#1d7a46" stroke-width="3" opacity="0.85"/>
+    <path d="M 1066 226 l 8 8 l 15 -17" fill="none" stroke="#1d7a46" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+  </g>
+</svg>

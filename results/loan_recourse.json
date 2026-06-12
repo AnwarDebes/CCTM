@@ -1,0 +1,191 @@
+{
+  "per_seed": [
+    {
+      "seed": 0,
+      "vanilla_tm": {
+        "test_acc": 1.0,
+        "exact": {
+          "n_attempts": 215,
+          "success_rate": 1.0,
+          "mean_length": 1.1860464811325073,
+          "mean_cost": 1.2790697813034058,
+          "mean_latency_ms": 0.12990818917751312,
+          "p95_latency_ms": 0.27756690979003906
+        },
+        "greedy": {
+          "n_attempts": 215,
+          "success_rate": 1.0,
+          "mean_length": 1.1906976699829102,
+          "mean_cost": 1.2651163339614868,
+          "mean_latency_ms": 0.3268585801124573,
+          "p95_latency_ms": 0.6137847900390615
+        }
+      },
+      "cctm": {
+        "test_acc": 1.0,
+        "exact": {
+          "n_attempts": 215,
+          "success_rate": 1.0,
+          "mean_length": 1.1860464811325073,
+          "mean_cost": 1.2790697813034058,
+          "mean_latency_ms": 0.1307598352432251,
+          "p95_latency_ms": 0.28307437896728516
+        },
+        "greedy": {
+          "n_attempts": 215,
+          "success_rate": 1.0,
+          "mean_length": 1.209302306175232,
+          "mean_cost": 1.209302306175232,
+          "mean_latency_ms": 0.3439037799835205,
+          "p95_latency_ms": 0.5298852920532227
+        },
+        "receipts_ok": 20,
+        "receipts_tested": 20
+      }
+    },
+    {
+      "seed": 1,
+      "vanilla_tm": {
+        "test_acc": 1.0,
+        "exact": {
+          "n_attempts": 228,
+          "success_rate": 1.0,
+          "mean_length": 1.2587718963623047,
+          "mean_cost": 1.4166666269302368,
+          "mean_latency_ms": 0.15076524019241333,
+          "p95_latency_ms": 0.3062009811401367
+        },
+        "greedy": {
+          "n_attempts": 228,
+          "success_rate": 1.0,
+          "mean_length": 1.2982456684112549,
+          "mean_cost": 1.2982456684112549,
+          "mean_latency_ms": 0.34325581789016724,
+          "p95_latency_ms": 0.5433559417724609
+        }
+      },
+      "cctm": {
+        "test_acc": 1.0,
+        "exact": {
+          "n_attempts": 228,
+          "success_rate": 1.0,
+          "mean_length": 1.2587718963623047,
+          "mean_cost": 1.4166666269302368,
+          "mean_latency_ms": 0.15015247464179993,
+          "p95_latency_ms": 0.30460357666015625
+        },
+        "greedy": {
+          "n_attempts": 228,
+          "success_rate": 1.0,
+          "mean_length": 1.2982456684112549,
+          "mean_cost": 1.2982456684112549,
+          "mean_latency_ms": 0.4161700904369354,
+          "p95_latency_ms": 0.6512403488159177
+        },
+        "receipts_ok": 20,
+        "receipts_tested": 20
+      }
+    },
+    {
+      "seed": 2,
+      "vanilla_tm": {
+        "test_acc": 1.0,
+        "exact": {
+          "n_attempts": 222,
+          "success_rate": 1.0,
+          "mean_length": 1.162162184715271,
+          "mean_cost": 1.3063063621520996,
+          "mean_latency_ms": 0.13604572415351868,
+          "p95_latency_ms": 0.2848625183105469
+        },
+        "greedy": {
+          "n_attempts": 222,
+          "success_rate": 1.0,
+          "mean_length": 1.1936936378479004,
+          "mean_cost": 1.2117117643356323,
+          "mean_latency_ms": 0.3197483420372009,
+          "p95_latency_ms": 0.5341410636901855
+        }
+      },
+      "cctm": {
+        "test_acc": 1.0,
+        "exact": {
+          "n_attempts": 222,
+          "success_rate": 1.0,
+          "mean_length": 1.162162184715271,
+          "mean_cost": 1.3063063621520996,
+          "mean_latency_ms": 0.13708961009979248,
+          "p95_latency_ms": 0.30341148376464844
+        },
+        "greedy": {
+          "n_attempts": 222,
+          "success_rate": 1.0,
+          "mean_length": 1.162162184715271,
+          "mean_cost": 1.3963963985443115,
+          "mean_latency_ms": 0.35602444410324097,
+          "p95_latency_ms": 0.5709648132324218
+        },
+        "receipts_ok": 20,
+        "receipts_tested": 20
+      }
+    }
+  ],
+  "summary": {
+    "vanilla_test_acc": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "cctm_test_acc": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "vanilla_exact_success": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "cctm_exact_success": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "vanilla_exact_length": {
+      "mean": 1.2023268540700276,
+      "std": 0.04108646981971322
+    },
+    "cctm_exact_length": {
+      "mean": 1.2023268540700276,
+      "std": 0.04108646981971322
+    },
+    "vanilla_exact_lat_ms": {
+      "mean": 0.13890638450781503,
+      "std": 0.008751825619321555
+    },
+    "cctm_exact_lat_ms": {
+      "mean": 0.1393339733282725,
+      "std": 0.008074506814115817
+    },
+    "vanilla_greedy_success": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "cctm_greedy_success": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "vanilla_greedy_length": {
+      "mean": 1.2275456587473552,
+      "std": 0.050007415988155536
+    },
+    "cctm_greedy_length": {
+      "mean": 1.2232367197672527,
+      "std": 0.05642283547952251
+    },
+    "vanilla_greedy_lat_ms": {
+      "mean": 0.32995424667994183,
+      "std": 0.009843363885286019
+    },
+    "cctm_greedy_lat_ms": {
+      "mean": 0.372032771507899,
+      "std": 0.03159962886236039
+    }
+  }
+}
