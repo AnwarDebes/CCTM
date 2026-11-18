@@ -13,6 +13,8 @@
 **A pure-Python reference implementation of CCTM v0.1, the sixth member of
 the Tsetlin Machine family alongside TM, GTM, HTM, HGTM, and THGTM.**
 
+▶ [Watch it in 45 seconds](https://anwardebes.github.io/shorts/#cctm)
+
 </div>
 
 ---
